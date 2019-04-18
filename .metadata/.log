@@ -1,0 +1,16 @@
+
+!ENTRY org.eclipse.core.resources 4 568 2019-04-18 11:31:16.331
+!MESSAGE Could not write workspace metadata 'N:\storage\.metadata\.plugins\org.eclipse.core.resources\0.snap'.
+!STACK 0
+java.io.FileNotFoundException: N:\storage\.metadata\.plugins\org.eclipse.core.resources\0.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.snapTree(SaveManager.java:1483)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1206)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1151)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
